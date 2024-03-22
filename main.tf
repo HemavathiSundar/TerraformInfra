@@ -2,11 +2,6 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_s3_bucket" "example_bucket" {
-  bucket = "jeevihema123987"
-  acl    = "private"
-
-}
 
 
 resource "aws_security_group" "example" {
@@ -25,6 +20,4 @@ resource "aws_security_group" "example" {
 resource "aws_instance" "example" {
   ami           = "ami-080e1f13689e07408"  
   instance_type = "t2.micro"
-  security_groups = ["hemaskeyy"] 
-
-}
+  security_groups = ["hemaskey"] 
