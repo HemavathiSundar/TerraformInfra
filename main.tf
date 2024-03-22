@@ -5,7 +5,7 @@ provider "aws" {
 
 
 resource "aws_security_group" "example" {
-  name        = "hemaunique123"
+  name        = "hemaunique12345"
   description = "Example security group for EC2 instance"
 
   ingress {
@@ -20,5 +20,5 @@ resource "aws_security_group" "example" {
 resource "aws_instance" "example" {
   ami           = "ami-080e1f13689e07408"  
   instance_type = "t2.micro"
-  security_groups = ["hemaunique123"]
+  security_groups = ["hemaunique12345"]
 }
