@@ -5,7 +5,7 @@ provider "aws" {
 
 
 resource "aws_security_group" "example" {
-  name        = "hemasinstance"
+  name        = "hemaunique"
   description = "Example security group for EC2 instance"
 
   ingress {
